@@ -42,7 +42,7 @@ h1 {
   color: var(--main-color2);
 }
 
-.ul {
+.ul-navbar {
   display: flex;
   justify-content: flex-end;
   list-style: none;
