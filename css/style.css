@@ -73,7 +73,7 @@ h1 {
   border-color: var(--main-color);
 }
 
-/* hero banner  */
+/* Styles for hero banner  */
 
 .hero-banner {
   position: relative;
@@ -91,3 +91,55 @@ h1 {
   background-color: var(--main-color);
   color: var(--main-color2)
 }
+
+/* Styles for About me section */
+
+.page-wrapper {
+  display: flex;
+  flex-direction:column;
+  margin: 15px;
+}
+
+.page-section1 {
+  /* border: 3px solid green; */
+  display: grid;
+  position: relative;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  line-height: 1;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+  "h2-about-me p-about-me1"
+  "h2-about-me p-about-me2"
+  ;
+}
+
+.h2-about-me {
+  grid-area: h2-about-me;
+  text-align: right;
+  text-wrap: nowrap;
+  position: absolute; 
+  top: 0; 
+  right: 0; 
+  padding: 20px;
+  color: var(--main-color2);
+}
+
+.p-about-me1 {
+  grid-area: p-about-me1; 
+  /* border: 3px solid blue; */
+  font-size: 12px;
+  padding: 5px 20px;
+  border-left: 3px solid var(--main-color); 
+}
+
+.p-about-me2 {
+  grid-area: p-about-me2; 
+  /* border: 3px solid blue; */
+  font-size: 12px;
+  padding: 5px 20px;
+  border-left: 3px solid var(--main-color); 
+}
+
