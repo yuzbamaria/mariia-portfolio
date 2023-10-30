@@ -3,8 +3,8 @@
 }
 
 :root {
-  --main-color: rgb(75, 211, 224);
-  --main-color2: rgb(72, 68, 68);
+  --main-color: rgb(144, 213, 220);
+  --main-color2: rgb(67, 107, 111);
 }
 
 
@@ -68,6 +68,7 @@ h1 {
 
 .a-navbar:hover {
   cursor: pointer;
+  padding: 4px;
   background-color: var(--main-color);
   color: var(--main-color2);
   border-color: var(--main-color);
@@ -102,7 +103,7 @@ h1 {
   max-width: 1200px;
   margin: 0 5px;
   grid-template-columns: 100%;
-  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-rows: auto auto auto;
   grid-template-areas: 
   "about"
   "work"
@@ -149,7 +150,7 @@ h1 {
   display: flex;
   flex-direction: row;
   padding: 0 40px;
-  height: 550px;
+  height: 560px;
 }
 
 .h2-work-left-column {
@@ -178,7 +179,7 @@ h1 {
 }
 
 .item-section2 {
-  border: 3px solid var(--main-color);
+  border: 4px solid var(--main-color);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -212,293 +213,52 @@ h1 {
   background-image: url("../images/02-portfolio-4.jpg");
 } 
 
-/*
-  width: 100%;
-  margin: 5px;
-  border: 3px solid var(--main-color);
-}*/
+/* Styles for the Contacts section */
 
-
-
-
-
-/* Styles for Work section grid*/
-
-/* .page-section2 {
-  display: grid;
-  justify-items: center;
-  position: relative;
-  margin-top: 40px;
-  grid-template-columns: 1fr 2fr 2fr;
-  grid-template-rows: 3fr 1fr 1fr;
-  grid-template-areas: 
-  "h2-work project-1 project-1"
-  "h2-work project-2 project-3"
-  "h2-work project-4 project-5"
-  ;
-} */
-
-/* #h2-work {
-  grid-area: h2-work;
+.page-section-contact {
   display: flex;
-  align-items:center;
-  margin: 15px;
-  position: absolute;
-  right: 0;
-  top: 0;
-  border: 3px solid var(--main-color);
-} */
-
-/* #h2-work::after {
-  content:"";
-  height: 4px;
-  width: 230px;
-  background-color: rgb(49,11,68);
-  display: block;
-  margin-left: auto;
-} */
-
-/* #project-1 {
-  grid-area: project-1;
-  background-image: url("../images/02-portfolio-1.jpg");
-  width: 90%;
-  margin: 0 5px 5px;
-  border: 3px solid var(--main-color);
+  flex-direction: row;
+  padding: 40px 40px 15px 40px;
 }
 
-#project-2 {
-  grid-area: project-2;
-  background-image: url("../images/02-portfolio-2.jpg");
-}
-
-#project-3 {
-  grid-area: project-3;
-  background-image: url("../images/02-portfolio-3.jpg");
-}
-
-#project-4 {
-  grid-area: project-4;
-  background-image: url("../images/02-portfolio-4.jpg");
-}
-
-#project-5 {
-  grid-area: project-5;
-  background-image: url("../images/02-portfolio-4.jpg");
-} */
-
-/* #project-2, #project-3, #project-4, #project-5 {
-  background-size: cover;
-  width: 80%;
-  margin-bottom: 5px;
-  border: 3px solid var(--main-color);
-} */
-
-/*
-.page-section1 {
-  border: 3px solid green; 
-  display: grid;
-  position: relative;
-  align-items: center;
-  width: 100%;
-  height: auto;
-  grid-template-columns: 1fr 4fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: 
-  "h2-about-me p-about-me1"
-  "h2-about-me p-about-me2"
-  ;
-}
-
-.page-section1::after{
-  content: " ";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 3px; 
-  background-color: var(--main-color); /* Adjust the color as needed 
-}
-
-.h2-about-me {
-  grid-area: h2-about-me;
+.h2-contacts {
+  padding: 0 20px 0 2px;
   text-align: right;
-  text-wrap: nowrap;
-  position: absolute; 
-  top: 0; 
-  right: 0; 
-  padding: 20px;
-}
-
-.p-about-me1 {
-  grid-area: p-about-me1; 
-  font-size: 16px;
-  padding: 10px 0 10px 20px;
-  margin-right: 40px;
-}
-
-.p-about-me2 {
-  grid-area: p-about-me2; 
-  font-size: 16px;
-  padding: 10px 0 10px 20px;
-  margin-right: 40px;
-}
-/*
-/* Styles for the portfolio container  */
-/*
-.page-section2 {
-  display: grid;
-  position: relative;
-  align-items: center;
-  margin-top: 40px;
-  grid-template-columns: 1fr 2fr 2fr;
-  grid-template-rows: 2fr 1fr 1fr;
-  grid-template-areas: 
-  "h2-work project-1 project-1"
-  "h2-work project-2 project-3"
-  "h2-work project-4 project-5"
-  ;
-}
-
-#h2-work {
- grid-area: h2-work;
- text-align: right;
- position: absolute; 
- top: 0; 
- right: 0;
- padding: 20px;
- color: var(--main-color2);
- 
-}
-
-#project-1 {
-  grid-area: project-1;
-  background-image: url("../images/02-portfolio-1.jpg");
-  background-size: cover;
-  height: 30vh;
-  width: 69vw;
-  margin-left: 22px;
-  margin-right: 40px;
-  border: 4px solid var(--main-color);
-}
-
-#project-2 {
-  grid-area: project-2;
-  background-image: url("../images/02-portfolio-2.jpg");
-  background-size: cover;
-  height: 15vh;
-  justify-self: stretch;
-  margin: 5px;
-  border: 4px solid var(--main-color);
-}
-
-#project-3 {
-  grid-area: project-3;
-  background-image: url("../images/02-portfolio-3.jpg");
-  background-size: cover;
-  height: 15vh;
-  justify-self: stretch;
-  border: 4px solid var(--main-color);
-}
-
-#project-4 {
-  grid-area: project-4;
-  background-image: url("../images/02-portfolio-4.jpg");
-  height: 15vh;
-  justify-self: stretch;
-  border: 4px solid var(--main-color);
-}
-
-#project-5 {
-  grid-area: project-5;
-  background-image: url("../images/02-portfolio-4.jpg");
-  height: 15vh;
-  justify-self: stretch;
-  border: 4px solid var(--main-color);
-}
-
-.item-section2 {
-  
-}
-
-  /*
-  background-position: center;
-  /* background-size: cover;
-  background-repeat: no-repeat;
-  cursor: pointer;
-  display: grid;
-  align-content: end;
-} */
-
-
-/* .h2-work {
-  grid-area: h2-work;
-  position: absolute;
-  text-align: right;
-  text-wrap: nowrap;
-  top: 0; 
-  right: 0; 
-  padding: 20px;
   color: var(--main-color2);
-  border: 3px solid red;
-} */
+  border-right: 3px solid var(--main-color2);
+}
 
-/* grid-area: h2-about-me;
-position: absolute; 
-text-align: right;
-text-wrap: nowrap;
+.contacts {
+  flex: 1;
+  padding: 0 30px;
+}
 
-top: 0; 
-right: 0; 
-padding: 20px;
-color: var(--main-color2);
-border: 3px solid red; */
+.ul-contacts {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  list-style: none;
+  padding-inline-start: 0;
+}
 
-/* .project-1 {
-  grid-area: project-1;
-  border-left: 3px solid var(--main-color); 
-  border: 3px solid red;
-  background-image: url("../images/02-portfolio-1.jpg");
-  height: 300px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 3px;
+.li-contacts {
+  border-bottom: 3px solid var(--main-color2);
+  padding: 0 15px;
+  margin: 5px;
+  color: var(--main-color);
+  transition: background-size 0.3s ease;
+}
+
+.a-contacts {
+ color: var(--main-color2);
+ text-decoration: none;
+ transition:0.3s ease;
+}
+
+.a-contacts:hover {
+  cursor: pointer;
   background-color: var(--main-color);
-  margin-left: 40px; 
-  max-width: 70vw;
-
-} */
-
-/* .project-2 {
-  grid-area: project-2;
-  border-left: 3px solid var(--main-color); 
-  background-image: url("../images/02-portfolio-2.jpg");
-  height: 150px;
-  border: 3px solid red;
-  max-width: 30vw;
+  padding: 4px;
+  color: white;
+  border-color: var(--main-color);
 }
-
-.project-3 {
-  grid-area: project-3;
-  background-image: url("../images/02-portfolio-3.jpg");
-  height: 150px;
-  max-width: 30vw;
-  border: 3px solid red;
-}
-
-.project-4 {
-  grid-area: project-4;
-  border-left: 3px solid var(--main-color); 
-  background-image: url("../images/02-portfolio-4.jpg");
-  height: 150px;
-  max-width: 30vw;
-  border: 3px solid red;
-}
-
-.project-5 {
-  grid-area: project-5;
-  background-image: url("../images/02-portfolio-5.jpg");
-  height: 150px;
-  max-width: 30vw;
-  margin-left: 40px;
-  border: 3px solid red;
-} */
