@@ -98,14 +98,204 @@ h1 {
 /* Styles for About me section */
 
 .page-wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin: 15px;
+  display: grid;
+  max-width: 1200px;
+  margin: 0 5px;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-areas: 
+  "about"
+  "work"
+  "contact"
 }
 
+#about {
+  grid-area: about;
+}
+
+#work {
+  grid-area: work;
+}
+
+#contact {
+  grid-area: contact;
+}
+
+/*Styles for About me section flexbox option*/
 .page-section1 {
-  /* border: 3px solid green; */
+  display: flex;
+  flex-direction: row;
+  padding: 40px;
+}
+
+.h2-about-me {
+  padding: 10px 20px;
+  text-align: right;
+  color: var(--main-color2);
+  border-right: 3px solid var(--main-color2);
+}
+
+.about-me-container {
+  flex-direction: column;
+  padding: 10px 30px;
+}
+
+.p-about-me1{
+  margin-bottom: 15px;
+}
+/* Styles for Work section flex */
+
+.page-section2-flex {
+  display: flex;
+  flex-direction: row;
+  padding: 0 40px;
+  height: 550px;
+}
+
+.h2-work-left-column {
+  padding: 0 20px 0 30px;
+  text-align: right;
+  color: var(--main-color2);
+  border-right: 3px solid var(--main-color2);
+} 
+
+.work-container-right-column {
+  flex: 1;
+  padding: 0 30px;
+}
+
+.work-grid {
+  display: grid; 
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr;
+  grid-gap: 15px;
+  grid-template-areas: 
+  "project-1 project-1"
+  "project-2 project-3"
+  "project-4 project-5"
+  ;
+}
+
+.item-section2 {
+  border: 3px solid var(--main-color);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  padding: 50px;
+}
+
+#project-1 {
+  grid-area: project-1;
+  background-image: url("../images/02-portfolio-1.jpg");
+}
+
+#project-2 {
+  grid-area: project-2;
+  background-image: url("../images/02-portfolio-2.jpg");
+}
+
+#project-3 {
+  grid-area: project-3;
+  background-image: url("../images/02-portfolio-3.jpg");
+}
+
+#project-4 {
+  grid-area: project-4;
+  background-image: url("../images/02-portfolio-4.jpg");
+
+}
+
+#project-5 {
+  grid-area: project-5;
+  background-image: url("../images/02-portfolio-4.jpg");
+} 
+
+/*
+  width: 100%;
+  margin: 5px;
+  border: 3px solid var(--main-color);
+}*/
+
+
+
+
+
+/* Styles for Work section grid*/
+
+/* .page-section2 {
+  display: grid;
+  justify-items: center;
+  position: relative;
+  margin-top: 40px;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-rows: 3fr 1fr 1fr;
+  grid-template-areas: 
+  "h2-work project-1 project-1"
+  "h2-work project-2 project-3"
+  "h2-work project-4 project-5"
+  ;
+} */
+
+/* #h2-work {
+  grid-area: h2-work;
+  display: flex;
+  align-items:center;
+  margin: 15px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: 3px solid var(--main-color);
+} */
+
+/* #h2-work::after {
+  content:"";
+  height: 4px;
+  width: 230px;
+  background-color: rgb(49,11,68);
+  display: block;
+  margin-left: auto;
+} */
+
+/* #project-1 {
+  grid-area: project-1;
+  background-image: url("../images/02-portfolio-1.jpg");
+  width: 90%;
+  margin: 0 5px 5px;
+  border: 3px solid var(--main-color);
+}
+
+#project-2 {
+  grid-area: project-2;
+  background-image: url("../images/02-portfolio-2.jpg");
+}
+
+#project-3 {
+  grid-area: project-3;
+  background-image: url("../images/02-portfolio-3.jpg");
+}
+
+#project-4 {
+  grid-area: project-4;
+  background-image: url("../images/02-portfolio-4.jpg");
+}
+
+#project-5 {
+  grid-area: project-5;
+  background-image: url("../images/02-portfolio-4.jpg");
+} */
+
+/* #project-2, #project-3, #project-4, #project-5 {
+  background-size: cover;
+  width: 80%;
+  margin-bottom: 5px;
+  border: 3px solid var(--main-color);
+} */
+
+/*
+.page-section1 {
+  border: 3px solid green; 
   display: grid;
   position: relative;
   align-items: center;
@@ -125,8 +315,8 @@ h1 {
   top: 0;
   bottom: 0;
   right: 0;
-  width: 3px; /* Adjust the width as needed */
-  background-color: var(--main-color); /* Adjust the color as needed */
+  width: 3px; 
+  background-color: var(--main-color); /* Adjust the color as needed 
 }
 
 .h2-about-me {
@@ -152,8 +342,9 @@ h1 {
   padding: 10px 0 10px 20px;
   margin-right: 40px;
 }
-
+/*
 /* Styles for the portfolio container  */
+/*
 .page-section2 {
   display: grid;
   position: relative;
