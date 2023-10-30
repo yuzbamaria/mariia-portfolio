@@ -33,9 +33,9 @@ p {
 .header-container {
   display: flex;
   justify-content: space-between;
+  width: 100%;
   background-color: var(--main-color2);
   align-items: center;
-  /* height: 58px; */
 }
 
 h1 {
@@ -49,7 +49,7 @@ h1 {
   display: flex;
   justify-content: flex-end;
   list-style: none;
-  margin-right: 20px;
+  margin-right: 40px;
 }
 
 .li-navbar {
@@ -78,6 +78,7 @@ h1 {
 .hero-banner {
   position: relative;
   background-image: url("../images/02-hero-bg.jpg");
+  width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   height: 180px;
@@ -85,9 +86,11 @@ h1 {
 
 .h2-hero-banner {
   position: absolute;
-  top: 130px;
-  left: 75%;
-  padding: 0 5px;
+  bottom: 0;
+  right: 0;
+  margin-right: 40px;
+  margin-bottom: 20px;
+  padding: 5px;
   background-color: var(--main-color);
   color: var(--main-color2)
 }
@@ -96,7 +99,8 @@ h1 {
 
 .page-wrapper {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
+  width: 100%;
   margin: 15px;
 }
 
@@ -107,13 +111,22 @@ h1 {
   align-items: center;
   width: 100%;
   height: auto;
-  line-height: 1;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: 
   "h2-about-me p-about-me1"
   "h2-about-me p-about-me2"
   ;
+}
+
+.page-section1::after{
+  content: " ";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 3px; /* Adjust the width as needed */
+  background-color: var(--main-color); /* Adjust the color as needed */
 }
 
 .h2-about-me {
@@ -124,22 +137,177 @@ h1 {
   top: 0; 
   right: 0; 
   padding: 20px;
-  color: var(--main-color2);
 }
 
 .p-about-me1 {
   grid-area: p-about-me1; 
-  /* border: 3px solid blue; */
-  font-size: 12px;
-  padding: 5px 20px;
-  border-left: 3px solid var(--main-color); 
+  font-size: 16px;
+  padding: 10px 0 10px 20px;
+  margin-right: 40px;
 }
 
 .p-about-me2 {
   grid-area: p-about-me2; 
-  /* border: 3px solid blue; */
-  font-size: 12px;
-  padding: 5px 20px;
-  border-left: 3px solid var(--main-color); 
+  font-size: 16px;
+  padding: 10px 0 10px 20px;
+  margin-right: 40px;
 }
 
+/* Styles for the portfolio container  */
+.page-section2 {
+  display: grid;
+  position: relative;
+  align-items: center;
+  margin-top: 40px;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-rows: 2fr 1fr 1fr;
+  grid-template-areas: 
+  "h2-work project-1 project-1"
+  "h2-work project-2 project-3"
+  "h2-work project-4 project-5"
+  ;
+}
+
+#h2-work {
+ grid-area: h2-work;
+ text-align: right;
+ position: absolute; 
+ top: 0; 
+ right: 0;
+ padding: 20px;
+ color: var(--main-color2);
+ 
+}
+
+#project-1 {
+  grid-area: project-1;
+  background-image: url("../images/02-portfolio-1.jpg");
+  background-size: cover;
+  height: 30vh;
+  width: 69vw;
+  margin-left: 22px;
+  margin-right: 40px;
+  border: 4px solid var(--main-color);
+}
+
+#project-2 {
+  grid-area: project-2;
+  background-image: url("../images/02-portfolio-2.jpg");
+  background-size: cover;
+  height: 15vh;
+  justify-self: stretch;
+  margin: 5px;
+  border: 4px solid var(--main-color);
+}
+
+#project-3 {
+  grid-area: project-3;
+  background-image: url("../images/02-portfolio-3.jpg");
+  background-size: cover;
+  height: 15vh;
+  justify-self: stretch;
+  border: 4px solid var(--main-color);
+}
+
+#project-4 {
+  grid-area: project-4;
+  background-image: url("../images/02-portfolio-4.jpg");
+  height: 15vh;
+  justify-self: stretch;
+  border: 4px solid var(--main-color);
+}
+
+#project-5 {
+  grid-area: project-5;
+  background-image: url("../images/02-portfolio-4.jpg");
+  height: 15vh;
+  justify-self: stretch;
+  border: 4px solid var(--main-color);
+}
+
+.item-section2 {
+  
+}
+
+  /*
+  background-position: center;
+  /* background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+} */
+
+
+/* .h2-work {
+  grid-area: h2-work;
+  position: absolute;
+  text-align: right;
+  text-wrap: nowrap;
+  top: 0; 
+  right: 0; 
+  padding: 20px;
+  color: var(--main-color2);
+  border: 3px solid red;
+} */
+
+/* grid-area: h2-about-me;
+position: absolute; 
+text-align: right;
+text-wrap: nowrap;
+
+top: 0; 
+right: 0; 
+padding: 20px;
+color: var(--main-color2);
+border: 3px solid red; */
+
+/* .project-1 {
+  grid-area: project-1;
+  border-left: 3px solid var(--main-color); 
+  border: 3px solid red;
+  background-image: url("../images/02-portfolio-1.jpg");
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3px;
+  background-color: var(--main-color);
+  margin-left: 40px; 
+  max-width: 70vw;
+
+} */
+
+/* .project-2 {
+  grid-area: project-2;
+  border-left: 3px solid var(--main-color); 
+  background-image: url("../images/02-portfolio-2.jpg");
+  height: 150px;
+  border: 3px solid red;
+  max-width: 30vw;
+}
+
+.project-3 {
+  grid-area: project-3;
+  background-image: url("../images/02-portfolio-3.jpg");
+  height: 150px;
+  max-width: 30vw;
+  border: 3px solid red;
+}
+
+.project-4 {
+  grid-area: project-4;
+  border-left: 3px solid var(--main-color); 
+  background-image: url("../images/02-portfolio-4.jpg");
+  height: 150px;
+  max-width: 30vw;
+  border: 3px solid red;
+}
+
+.project-5 {
+  grid-area: project-5;
+  background-image: url("../images/02-portfolio-5.jpg");
+  height: 150px;
+  max-width: 30vw;
+  margin-left: 40px;
+  border: 3px solid red;
+} */
