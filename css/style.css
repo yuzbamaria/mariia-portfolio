@@ -79,11 +79,12 @@ h1 {
 
 .hero-banner {
   position: relative;
-  background-image: url("../images/02-hero-bg.jpg");
+  background-image: url("../images/Banner_myPhoto.png");
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 180px;
+  background-position: center top;
+  height: 300px;
 }
 
 .h2-hero-banner {
