@@ -4,7 +4,7 @@
 
 :root {
   --main-color: rgb(144, 213, 220);
-  --main-color2: rgb(67, 107, 111);
+  --main-color2: rgb(47, 76, 78);
 }
 
 
@@ -220,26 +220,22 @@ h1 {
 
 .heading {
   display: inline-block;
-  padding: 20px 25px;;
+  padding: 5px 5px;
   position: absolute;
   left: 0;
   bottom: 15%;
   background-color: var(--main-color);
   color: var(--main-color2);
-  font-size: 20px;
-  font-weight: bold;
 }
 
 .heading1 {
   display: inline-block;
-  padding: 20px 25px;;
+  padding: 5px 5px;;
   position: absolute;
   left: 0;
   bottom: 7%;
   background-color: var(--main-color);
   color: var(--main-color2);
-  font-size: 20px;
-  font-weight: bold;
 }
 
 /* Styles for the Contacts section */
