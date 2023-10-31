@@ -346,10 +346,12 @@ h1 {
 
 /* About Me section*/
   .page-section1 {
+    padding: 20px;
+  }
+  .page-section1 {
     flex-direction: column;
-    align-items: center; 
+    align-items: left; 
     justify-content: center; 
-    padding: 0;
   }
 
   .h2-about-me br {
@@ -357,10 +359,17 @@ h1 {
   }
 
   .h2-about-me {
-    text-align: center;
+    text-align: left;
     border-bottom: 3px solid var(--main-color2);
     border-right: transparent;
-    width: 70%;
+    width: 90%;
+    padding: 0;
+    margin: 10px 20px;
+  }
+
+  .about-me-container {
+    margin: 10px 20px;
+    padding: 0;
   }
 
 
