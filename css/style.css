@@ -346,12 +346,10 @@ h1 {
 
 /* About Me section*/
   .page-section1 {
-    padding: 20px;
-  }
-  .page-section1 {
     flex-direction: column;
     align-items: left; 
     justify-content: center; 
+    padding: 20px;
   }
 
   .h2-about-me br {
@@ -372,7 +370,100 @@ h1 {
     padding: 0;
   }
 
+/* Work section */
 
+.page-section2-flex {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.h2-work-left-column {
+  padding: 0;
+  text-align: left;
+  border-right: transparent;
+  border-bottom: 3px solid var(--main-color2);
+  margin: 10px 20px;
+} 
+
+.work-container-right-column {
+  flex: 1;
+  padding: 0;
+}
+
+.work-grid {
+  width: 90%;
+  margin: 0 20px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 5px;
+  grid-template-areas: 
+  "project-1"
+  "project-2" 
+  "project-3"
+  "project-4" 
+  "project-5"
+  ;
+}
+
+.item-section2 {
+  /* border: 4px solid var(--main-color);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; */
+  padding: 0;
+  align-self: center; 
+
+  /* position: relative; */
+}
+
+#project-1, #project-2, #project-3, #project-4, #project-5 {
+  min-height: 100px;
+}
+
+#project-1 {
+  grid-area: project-1;
+}
+
+#project-2 {
+  grid-area: project-2;
+}
+
+#project-3 {
+  grid-area: project-3;
+}
+
+#project-4 {
+  grid-area: project-4;
+}
+
+#project-5 {
+  grid-area: project-5;
+} 
+
+.heading {
+  /* display: inline-block; */
+  padding: 5px 5px;
+  position: absolute;
+  left: 0;
+  bottom: 15%;
+  background-color: var(--main-color);
+  color: var(--main-color2);
+}
+
+.heading1 {
+  display: inline-block;
+  padding: 5px 5px;;
+  position: absolute;
+  left: 0;
+  bottom: 7%;
+  background-color: var(--main-color);
+  color: var(--main-color2);
+}
+
+.project-links {
+  text-decoration: none;
+}
 }
 
 @media (max-width: 425px) {
