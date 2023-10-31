@@ -337,9 +337,10 @@ h1 {
   
   .h2-hero-banner {
     font-size: larger;
+    text-align: center;
+    padding: 0;
     margin: 0;
     left: 50%;
-    bottom: 2vh;
     transform: translate(-50%, -50%);
   }
 
@@ -362,15 +363,8 @@ h1 {
     width: 70%;
   }
 
-  .about-me-container {
-    flex-direction: column;
-    padding: 10px 30px;
-  }
 
-  .p-about-me1{
-    margin-bottom: 15px;
-  }
-  }
+}
 
 @media (max-width: 425px) {
   .header-container {
