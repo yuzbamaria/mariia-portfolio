@@ -238,6 +238,10 @@ h1 {
   color: var(--main-color2);
 }
 
+.project-links {
+  text-decoration: none;
+}
+
 /* Styles for the Contacts section */
 
 .page-section-contact {
