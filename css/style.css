@@ -586,20 +586,106 @@ h1 {
     padding: 0;
   }
   
-  /*
-  .ul-navbar {
-    margin: 10px;
-    padding: 0;
-  } */
-  
   .li-navbar {
     font-size: 1.2rem;
     padding: 0;
   }
-  
-  /* .a-navbar{
-  font-size: 1rem;
-  } */
+
+  /* About Me section*/
+  .page-section1 {
+    flex-direction: column;
+    /* align-items: left; 
+    justify-content: center;  */
+    padding: 30px;
+  }
+
+  .h2-about-me br {
+    display: none;
+  }
+
+  .h2-about-me {
+    text-align: left;
+    border-bottom: 3px solid var(--main-color2);
+    border-right: transparent;
+    padding: 5px;
+    margin: 10px 20px;
+    font-size: 28px;
+  }
+
+  .about-me-container {
+    margin: 10px 20px;
+    padding: 0;
+  }
+
+  .p-about-me1, .p-about-me2 {
+    font-size: 18px;
+  }
+
+/* Work section */
+
+/* .page-section2-flex {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.h2-work-left-column {
+  padding: 0;
+  text-align: left;
+  border-right: transparent;
+  border-bottom: 3px solid var(--main-color2);
+  margin: 10px 20px;
+} 
+
+.work-container-right-column {
+  flex: 1;
+  padding: 0;
+}
+
+.work-grid {
+  width: 90%;
+  margin: 0 20px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 5px;
+  grid-template-areas: 
+  "project-1"
+  "project-2" 
+  "project-3"
+  "project-4" 
+  "project-5"
+  ;
+}
+
+.item-section2 {
+  padding: 0;
+  align-self: center; 
+}
+
+#project-1, #project-2, #project-3, #project-4, #project-5 {
+  min-height: 100px;
+}
+
+#project-1 {
+  grid-area: project-1;
+}
+
+#project-2 {
+  grid-area: project-2;
+}
+
+#project-3 {
+  grid-area: project-3;
+}
+
+#project-4 {
+  grid-area: project-4;
+}
+
+#project-5 {
+  grid-area: project-5;
+}  */
+
 
 }
 
