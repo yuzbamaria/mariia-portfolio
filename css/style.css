@@ -501,6 +501,19 @@ h1 {
   font-size: medium;
 }
 
+/* About Me section*/
+.page-section1 {
+  padding: 10px;
+}
+
+.h2-about-me {
+  border-bottom: 2.5px solid var(--main-color2);
+  font-size: 20px;
+}
+
+.p-about-me1, .p-about-me2 {
+  font-size: 14px;
+}
 }
 
 /* // Small devices (landscape phones, less than 768px)
