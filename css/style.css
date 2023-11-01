@@ -254,10 +254,10 @@ h1 {
   color: var(--main-color2);
 }
 
-/* .project-links:hover {
+.project-links:hover {
   cursor: pointer;
   color: white;
-} */
+}
 
 /* Styles for the Contacts section */
 
