@@ -197,7 +197,7 @@ h1 {
 }
 
 .item-section2:hover {
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5)
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
 #project-1 {
@@ -572,8 +572,38 @@ h1 {
 }
 }
 
-/* // Small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) { ... }
+@media (max-width: 767.98px) {
+  /* Navbar section */
+  .header-container {
+    flex-direction: column; 
+  }
+
+  h1 {
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*
+  .ul-navbar {
+    margin: 10px;
+    padding: 0;
+  } */
+  
+  .li-navbar {
+    font-size: 1.2rem;
+    padding: 0;
+  }
+  
+  /* .a-navbar{
+  font-size: 1rem;
+  } */
+
+}
+
+/*
 
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) { ... }
