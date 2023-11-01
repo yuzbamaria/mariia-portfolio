@@ -192,6 +192,12 @@ h1 {
   background-position: center;
   padding: 35px;
   position: relative;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+  transition: box-shadow 0.3s;
+}
+
+.item-section2:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5)
 }
 
 #project-1 {
@@ -247,6 +253,11 @@ h1 {
   text-decoration: none;
   color: var(--main-color2);
 }
+
+/* .project-links:hover {
+  cursor: pointer;
+  color: white;
+} */
 
 /* Styles for the Contacts section */
 
