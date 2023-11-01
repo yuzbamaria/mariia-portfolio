@@ -15,4 +15,4 @@ My task was to apply the skills I learned during the week (flexbox, grid, media 
 https://yuzbamaria.github.io/mariia-portfolio/ 
 
 ## A screenshot of the application
-[!screenshot-mariia-portfolio](mariia-portfolio-screenshot.png)
+[!screenshot-mariia-portfolio](images/mariia-portfolio-screenshot.png)
