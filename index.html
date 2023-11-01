@@ -5,41 +5,124 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lernantino // Web Developer</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Mariia Yuzba Portfolio</title>
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
   <!-- main logo / nav -->
-  <header>
-    <h1>Lernantino</h1>
-    <nav>
+  <header class="header-container">
+    <h1>Mariia Yuzba</h1>
+    <nav class="navbar">
+      <ul class="ul-navbar">
+        <li class="li-navbar"><a class="a-navbar" href="#about">About me</a></li>
+        <li class="li-navbar"><a class="a-navbar"href="#work">My work</a></li>
+        <li class="li-navbar"><a class="a-navbar"href="#contact">Contact me</a></li>
+        <li class="li-navbar">Resume</li>
+      </ul>
     </nav>
   </header>
 
   <!-- hero banner -->
   <section class="hero-banner">
     <div>
-      <h2>Cool subtitle here!</h2>
+      <h2 class="h2-hero-banner">Cool subtitle here!</h2>
     </div>
   </section>
 
   <main class="page-wrapper">
+
     <!-- about me -->
-    <section class="page-section" id="about">
-      <h2>About Me</h2>
+    <section class="page-section1" id="about">
+
+      <h2 class="h2-about-me">About <br> Me</h2>
+      <div class="about-me-container">
+        <p class="p-about-me1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, blanditiis beatae. Esse ipsum enim rem numquam quam distinctio velit eius? Doloribus iure earum ad ducimus temporibus facilis repellat cupiditate quae?
+        Soluta natus incidunt molestiae, facilis neque unde ab laudantium ratione et dignissimos distinctio at dolores nostrum? Illum molestiae voluptatibus ad amet. Dolores beatae corrupti voluptatum eaque aut vitae temporibus ex.
+        </p>
+        <p class="p-about-me2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, blanditiis beatae. Esse ipsum enim rem numquam quam distinctio velit eius? Doloribus iure earum ad ducimus temporibus facilis repellat cupiditate quae?
+          Soluta natus incidunt molestiae, facilis neque unde ab laudantium ratione et dignissimos distinctio at dolores nostrum? Illum molestiae voluptatibus ad amet. Dolores beatae corrupti voluptatum eaque aut vitae temporibus ex.
+        </p>
+      </div>
+
     </section>
 
     <!-- portfolio container -->
-    <section class="page-section" id="work">
-      <h2>Work</h2>
+    <section class="page-section2-flex" id="work">
+
+      <h2 class="h2-work-left-column">Work</h2>
+      
+
+      <div class="work-container-right-column"> 
+
+        <div class="work-grid">
+
+          <div id="project-1" class="item-section2">
+            <div class="heading1">
+              <a class="project-links" href="#" target="_blank">
+                <h3>Project 1</h3>
+              </a>
+              <p class="project-description">description</p>
+            </div>
+          </div>
+
+          <div id="project-2" class="item-section2">
+            <div class="heading">
+              <a class="project-links" href="https://yuzbamaria.github.io/my-landing-page/" target="_blank">
+                <h3>My landing page</h3>
+              </a>
+              <p class="project-description">HTML / CSS</p>
+            </div>
+          </div>
+        
+          <div id="project-3" class="item-section2">
+            <div class="heading">
+              <a class="project-links" href="https://yuzbamaria.github.io/marketing-agency/" target="_blank">
+                <h3>Horiseon site</h3>
+              </a>
+              <p class="project-description">HTML / CSS</p>
+            </div>
+            
+          </div>
+
+          <div id="project-4" class="item-section2">
+            <div class="heading">
+              <a class="project-links" href="#" target="_blank">
+                <h3>Project 4</h3>
+              </a>
+              <p class="project-description">description</p>
+            </div>
+          </div>
+
+          <div id="project-5" class="item-section2">
+            <div class="heading">
+              <a class="project-links" href="#" target="_blank">
+                <h3>Project 5</h3>
+              </a>
+              <p class="project-description">description</p>
+            </div>
+          </div>
+      </div>
+    </div>
+      
     </section>
 
-    <!-- contact -->
-    <section class="page-section contact" id="contact">
-      <h2>Contact Me</h2>
+    <section class="page-section-contact" id="contact">
+      <h2 class="h2-contacts">Contact </br> Me</h2>
+      <div class="contacts">
+        <ul class="ul-contacts">
+          <li class="li-contacts"><a class="a-contacts" href="#about">placeholder@gmail.com</a></li>
+          <li class="li-contacts"><a class="a-contacts"href="https://github.com/yuzbamaria"target="_blank">GitHub</a></li>
+          <li class="li-contacts"><a class="a-contacts"href="https://www.linkedin.com/in/mariyayuzba/" target="_blank">Linkedin</a></li>
+        </ul>
+      </nav>
     </section>
+
   </main>
+
+  <!-- contact -->
+  <footer></footer>
+  
 </body>
 
 </html>
